@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    margin: 2rem;
+    text-align: center;
+}
+h1,h2{
+    margin: 1rem;
+}
+
+.destinoDias{
+    margin: 1rem;
+}
+
+.seccionDestinos{
+    background-color: violet;
+}
