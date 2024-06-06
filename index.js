@@ -6,7 +6,7 @@ const destinos = [
 ];
 
 //Constructor
-class PersonaConstructor {
+class Persona {
     constructor(nombre, edad, ciudad) {
         this.nombre = nombre;
         this.edad = edad;
@@ -14,14 +14,14 @@ class PersonaConstructor {
     }
 }
 
-persona = () => {
+crearPersona = () => {
     let nombre = prompt("Ingrese su nombre");
     let edad = parseInt(prompt("Ingrese su edad"));
     let ciudad = prompt("Ingrese su ciudad de residencia");
-    const user = new PersonaConstructor(nombre, edad, ciudad);
+    const user = new Persona(nombre, edad, ciudad);
     return user;
 }
-const usuario = persona();
+const usuario = crearPersona();
 
 //Variables y DOM
 let seccion_destinos = document.getElementById("seccion_destinos");
