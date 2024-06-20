@@ -2,20 +2,77 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
-body{
-    margin: 2rem;
+h1 {
+    margin: 1rem;
+}
+
+body {
     text-align: center;
-}
-h1,h2{
-    margin: 1rem;
+
 }
 
-.destinoDias{
-    margin: 1rem;
+/* NavBar */
+
+.navBar {
+    justify-content: center;
+    width: 100%;
+    background-color: #3f9164;
+    position: sticky;
 }
 
-.seccionDestinos{
-    background-color: violet;
+.navBar nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBar nav ul li {
+    margin: .5rem;
+    align-items: center;
+}
+
+.navBar nav ul li a img {
+    width: 8rem;
+}
+
+
+/* Index */
+
+#formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#formulario label {
+    font-size: 1.5rem;
+}
+
+#formulario input {
+    width: 15%;
+    margin: .5rem;
+}
+
+
+/* Productos */
+
+#productoSeccion {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.productoImg {
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+.productoPrecio {
+    margin-bottom: 1.5rem;
 }
