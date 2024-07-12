@@ -6,7 +6,6 @@ const header = document.getElementById("header");
 const footer = document.getElementById("footer")
 const nav = document.createElement("nav");
 const navDiv = document.createElement("div");
-const navLinks = ["Index", "Productos", "Contacto"];
 const li = document.createElement("li");
 const ul = document.createElement("ul");
 const inicio = document.createElement('a');
@@ -15,6 +14,9 @@ const p = document.createElement("p");
 const boton = document.createElement("button");
 const div = document.createElement("div");
 const section = document.createElement("section");
+const divFooter = document.createElement("div");
+const anio = new Date().getFullYear(); 
+
 
 //Barra de navegacion
 
@@ -30,12 +32,11 @@ img.alt = 'Rame';
 li.appendChild(inicio);
 ul.appendChild(li);
 
-for (const navPages of navLinks) {
-    const navLi = document.createElement('li');
-    navLi.innerHTML = `<a href="${navPages.toLowerCase()}.html" >${navPages}</a>`;
-    ul.appendChild(navLi);
-    navLi.className = 'navPages'
-
-};
 
 
+
+//Footer
+
+footer.appendChild(divFooter);
+divFooter.appendChild(p);
+divFooter.innerHTML = 'Lucas Diaz | CoderHouse | ' + anio;
